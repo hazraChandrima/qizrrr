@@ -1,6 +1,8 @@
 # 📄 PDF & Text to Quiz Generator
 
-Automatically generate quizzes from **PDF documents** or **text inputs** using OpenAI's GPT API. This FastAPI-based backend allows you to extract content and generate relevant questions that can be used in educational apps, study tools, or interactive learning platforms.
+Automatically generate quizzes from **PDF documents** or **text inputs**. This FastAPI-based backend allows you to extract content and generate relevant questions that can be used in educational apps, study tools, or interactive learning platforms.
+
+_I mean this idea's really silly and useless anyways...you can just do the same by uploading a file in chatgpt :/_
 
 ## ✨ Features
 
