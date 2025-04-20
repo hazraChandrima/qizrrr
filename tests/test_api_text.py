@@ -4,7 +4,12 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-url = "http://127.0.0.1:8000/text_to_quizz/"
+
+IP_ADDRESS = os.getenv("IP_ADDRESS")
+url = f"http://{IP_ADDRESS}:8000/text_to_quizz/"
+# print(url)
+
+
 data = {
     "content": """Artificial Intelligence (AI) is a branch of computer science that aims to create machines that can perform tasks that typically require human intelligence. These tasks include problem-solving, decision-making, learning, and understanding natural language. AI is broadly classified into two categories: narrow AI and general AI.
 
