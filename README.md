@@ -14,15 +14,17 @@ Automatically generate quizzes from **PDF documents** or **text inputs** using O
 
 1. **Clone the repository and install dependencies**
    ```bash
-   git clone https://github.com/yourusername/PDF-text_to_quiz.git
-   cd PDF-text_to_quiz/
+   git clone --depth=1 https://github.com/hazraChandrima/qizrrr.git
+   cd qizrrr/
    pip install -r requirements.txt
    ```
 
 2. **Create a .env file in the root directory to store your OpenAI credentials:**
    ```ini
    OPENAI_API_KEY=your_openai_api_key
+   IP_ADDRESS=your_local_ip_address
    ```
+
 
 ## 🚀 How to Run the API
 
@@ -37,8 +39,17 @@ Access:
 - PDF to Quiz: POST http://127.0.0.1:8000/pdf_to_quizz/
 - Text to Quiz: POST http://127.0.0.1:8000/text_to_quizz/
 
-### Option 2: Run APIs Separately (Advanced)
+
+
+### Option 2: Run APIs Separately
 You can also run each API independently on different ports:
+
+
+1. **Move to the src/api directory and run the following commands**
+   ```bash
+   cd ./src/api/
+   ```
+
 
 PDF to Quiz (Port 8000):
 ```bash
@@ -49,6 +60,7 @@ Text to Quiz (Port 8001):
 ```bash
 uvicorn api_text:app --host 127.0.0.1 --port 8001 --reload
 ```
+
 
 ## 🧪 How to Use the API
 
